@@ -1,6 +1,6 @@
 {
   "name": "empty_project",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Empty project template",
   "private": true,
   "scripts": {
@@ -12,21 +12,21 @@
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.7.1",
-    "eslint": "^8.24.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "css-loader": "^5.2.4",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-webpack-plugin": "^2.5.4",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
-    "prettier": "^2.7.1",
+    "prettier": "2.5.1",
     "sass": "^1.32.12",
-    "sass-loader": "^13.0.2",
-    "ts-loader": "^9.4.1",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.1"
+    "sass-loader": "^11.0.1",
+    "ts-loader": "^9.2.6",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^3.11.2"
   },
   "main": "webpack.config.js",
   "dependencies": {
