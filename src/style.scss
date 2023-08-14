@@ -4,20 +4,23 @@
 @import "/src/scss/_adaptiv.scss";
 
 //!===============================================================================
-
-
+//heder
+@import "/src/pages/header/style/style.scss";
+//offers
+@import "/src/pages/offers/style/style.scss";
 
 //!===============================================================================
 :root {
   --main-rotate-minus: -55deg;
   --main-rotate-plus: 55deg;
   --main-rotate-zero: 0;
-  --main-color-d: rgb(0, 0, 0);
+  --main-color-black: rgb(0, 0, 0);
   --main-color-dw: rgb(138, 136, 136);
   --main-color-w: rgb(255, 255, 255);
-  --main-color-g: rgb(163, 147, 2);
-  --main-color-gm: rgb(255, 230, 6);
-  --main-color-o: rgb(0, 0, 0, 0);
+  --main-color-gren: #57B18A;
+  --main-color-grenM: #79C1A1;
+  --main-color-mod1: #6F6FC4;
+  --main-color-mod2: #FFA27D;
   --main-color-m: rgb(158, 5, 5);
   --main-color-mh: rgb(255, 0, 0);
   --main-color-o1: rgba(0, 0, 0, 0.1);
@@ -31,7 +34,10 @@
   --front-size17: 1.0vw;
   --front-size20: 1.2vw;
   --front-size27: 1.4vw;
+  --front-size32: 1.8vw;
+  --front-size40: 2vw;
   --front-size65: 3.6vw;
+  --front-sizeMax: 4.6vw;
 }
 
 %btn {
@@ -57,6 +63,7 @@
 //!===============================================================================
 //main
 body {
+  cursor: auto;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -89,6 +96,32 @@ body {
   h4 {
     font-family: 'Oranienbaum', sans-serif;
     font-size: 1vw;
+  }
+
+  .line {
+
+    &__style {
+      border: 1px solid var(--main-color-dw);
+      margin: 1vh 0px;
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color-gren);
+
+    font-size: var(--front-size27);
+    width: 32vw;
+    height: 9vh;
+    border-radius: 1vw;
+    color: var(--main-color-w);
+    transition: background 0.3s ease 0s;
+
+    &:hover {
+      background: var(--main-color-grenM);
+    }
   }
 }
 
