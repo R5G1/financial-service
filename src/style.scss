@@ -1,16 +1,104 @@
 //Styles
 @import "/src/scss/_null.scss";
 @import "/src/scss/_font name.scss";
+@import "/src/scss/_adaptiv.scss";
+
 //!===============================================================================
 
-//main
-body {
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  background: rgb(187, 187, 187);
+
+
+//!===============================================================================
+:root {
+  --main-rotate-minus: -55deg;
+  --main-rotate-plus: 55deg;
+  --main-rotate-zero: 0;
+  --main-color-d: rgb(0, 0, 0);
+  --main-color-dw: rgb(138, 136, 136);
+  --main-color-w: rgb(255, 255, 255);
+  --main-color-g: rgb(163, 147, 2);
+  --main-color-gm: rgb(255, 230, 6);
+  --main-color-o: rgb(0, 0, 0, 0);
+  --main-color-m: rgb(158, 5, 5);
+  --main-color-mh: rgb(255, 0, 0);
+  --main-color-o1: rgba(0, 0, 0, 0.1);
+  --main-color-o9: rgba(0, 0, 0, 0.9);
+  --front-w3: 300;
+  --front-w4: 400;
+  --front-w5: 500;
+  --front-w7: 700;
+  --front-size11: 0.8vw;
+  --front-size14: 0.9vw;
+  --front-size17: 1.0vw;
+  --front-size20: 1.2vw;
+  --front-size27: 1.4vw;
+  --front-size65: 3.6vw;
 }
 
-.hide {
-  display: none;
+%btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: var(--front-size14);
+  }
+
+  width: 32vw;
+  height: 9vh;
+  border-radius: 3vw;
+  color: var(--main-color-w);
+  transition: background 0.3s ease 0s;
+
+  &:hover {
+    background: var(--main-color-w);
+  }
 }
+
+//!===============================================================================
+//main
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0 auto;
+  background: var(--main-color-w);
+  // font-size: calc(10px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
+
+
+  .conteiner {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0px 1vw 0px 1vw;
+  }
+
+  a {
+    transition: color 0.3s ease 0s;
+    color: var(--main-color-d);
+
+    &:hover {
+      color: var(--main-color-mh);
+    }
+  }
+
+  h3 {
+    font-family: 'Oranienbaum', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+  }
+
+  h4 {
+    font-family: 'Oranienbaum', sans-serif;
+    font-size: 1vw;
+  }
+}
+
+//!===============================================================================
+
+.header-navigation.activ {
+  position: fixed;
+  margin-left: -10px;
+  width: 100vw;
+  background: rgba(7, 7, 7, 0.418);
+}
+
+//!===============================================================================
