@@ -8,6 +8,8 @@
 @import "/src/pages/header/style/style.scss";
 //offers
 @import "/src/pages/offers/style/style.scss";
+//work
+@import "/src/pages/work/style/style.scss";
 
 //!===============================================================================
 :root {
@@ -47,6 +49,7 @@
 
   p {
     font-size: var(--front-size14);
+    color: var(--main-color-black);
   }
 
   width: 32vw;
@@ -87,15 +90,28 @@ body {
     }
   }
 
+  h2 {
+    font-family: 'Oranienbaum', sans-serif;
+    font-size: 1.4vw;
+    
+  }
+
   h3 {
     font-family: 'Oranienbaum', sans-serif;
-    text-transform: uppercase;
+
     font-size: 1.2vw;
   }
 
   h4 {
     font-family: 'Oranienbaum', sans-serif;
     font-size: 1vw;
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: var(--main-color-black);
+    font-weight: var(--front-w7);
   }
 
   .line {

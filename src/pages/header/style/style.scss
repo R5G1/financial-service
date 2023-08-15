@@ -137,10 +137,7 @@
     &__content {
         height: 30vh;
         padding-left: 0.5vw;
-        color: var(--main-color-black);
-        font-size: var(--front-sizeMax);
 
-        font-weight: bold;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -151,6 +148,12 @@
             border-radius: 10px;
             max-width: 21vw;
         }
+    }
+
+    &__content-title {
+        color: var(--main-color-black);
+        font-size: var(--front-sizeMax);
+        font-weight: var(--front-w7);
     }
 
     &__content-calc {}
