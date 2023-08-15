@@ -12,7 +12,8 @@
 @import "/src/pages/work/style/style.scss";
 //questions
 @import "/src/pages/questions/style/style.scss";
-
+//benefits
+@import "/src/pages/benefits/style/style.scss";
 //!===============================================================================
 :root {
   --main-rotate-minus: -55deg;
@@ -73,7 +74,7 @@ body {
   font-style: normal;
   font-weight: normal;
   margin: 0 auto;
-  background: var(--main-color-w);
+  background: #F9F8FE;
   // font-size: calc(10px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
 
 
