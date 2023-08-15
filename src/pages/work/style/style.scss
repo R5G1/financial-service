@@ -9,7 +9,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // flex: 0 1 calc((100% - 2 * 30px) / 3);
+
+        @media (max-width:992px) {
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
     }
 
     &__block {
@@ -20,6 +25,10 @@
         border-radius: 15px;
         padding: 1.5vh 1.5vw;
         background: #f3f3f3;
+
+        @media (max-width:992px) {
+            margin: 2vh 2vw;
+        }
     }
 
     &__block-number {
@@ -56,7 +65,7 @@
 
     &__block-title {
         font-size: var(--front-size27);
-        padding: 1.5vh 1.5vw;
+        padding: 2vh 0vw;
     }
 
     &__block-img1,

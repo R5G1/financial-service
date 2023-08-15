@@ -3,9 +3,8 @@
     &__content {}
 
     &__content-title {
-        color: var(--main-color-black);
-        font-size: var(--front-size40);
-        font-weight: bold;
+        padding: 2vh 0vw;
+        margin-top: 5vh;
     }
 
     &__container {
@@ -47,6 +46,7 @@
     &__content-block-text {
         color: var(--main-color-black);
         font-size: var(--front-size27);
+        font-weight: var(--front-w5);
         text-align: center;
         padding: 3vh 3vw;
     }
@@ -99,7 +99,8 @@
 
     &__content-banner-title {
         color: var(--main-color-black);
-        font-size: var(--front-size27);
+        font-size: var(--front-size40);
+        font-weight: var(--front-w7);
         text-align: center;
         padding: 2vh 2vw;
     }

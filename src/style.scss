@@ -10,6 +10,8 @@
 @import "/src/pages/offers/style/style.scss";
 //work
 @import "/src/pages/work/style/style.scss";
+//questions
+@import "/src/pages/questions/style/style.scss";
 
 //!===============================================================================
 :root {
@@ -92,7 +94,7 @@ body {
 
   h2 {
     font-family: 'Oranienbaum', sans-serif;
-    font-size: 1.4vw;
+    font-size: var(--front-size40);
     
   }
 
