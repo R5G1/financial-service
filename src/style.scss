@@ -16,6 +16,8 @@
 @import "/src/pages/benefits/style/style.scss";
 //feedback
 @import "/src/pages/feedback/style/style.scss";
+//requirements
+@import "/src/pages/requirements/style/style.scss";
 //!===============================================================================
 :root {
   --main-rotate-minus: -55deg;
@@ -83,7 +85,7 @@ body {
   .conteiner {
     max-width: 1190px;
     margin: 0 auto;
-    padding: 0px 1vw 0px 1vw;
+    padding: 1vw 1.5vw;
   }
 
   a {
