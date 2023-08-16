@@ -20,6 +20,9 @@
 @import "/src/pages/requirements/style/style.scss";
 //footer-menu
 @import "/src/pages/footer-menu/style/style.scss";
+//footer
+@import "/src/pages/footer/style/style.scss";
+
 //!===============================================================================
 :root {
   --main-rotate-minus: -55deg;
@@ -34,8 +37,6 @@
   --main-color-mod2: #FFA27D;
   --main-color-m: rgb(158, 5, 5);
   --main-color-mh: rgb(255, 0, 0);
-  --main-color-o1: rgba(0, 0, 0, 0.1);
-  --main-color-o9: rgba(0, 0, 0, 0.9);
   --front-w3: 300;
   --front-w4: 400;
   --front-w5: 500;
@@ -51,26 +52,6 @@
   --front-sizeMax: 4.6vw;
 }
 
-%btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    font-size: var(--front-size14);
-    color: var(--main-color-black);
-  }
-
-  width: 32vw;
-  height: 9vh;
-  border-radius: 3vw;
-  color: var(--main-color-w);
-  transition: background 0.3s ease 0s;
-
-  &:hover {
-    background: var(--main-color-w);
-  }
-}
 
 //!===============================================================================
 //main
@@ -95,30 +76,26 @@ body {
     color: var(--main-color-d);
 
     &:hover {
-      color: var(--main-color-mh);
+      color: var(--main-color-dw);
     }
   }
 
   h2 {
-    font-family: 'Oranienbaum', sans-serif;
     font-size: var(--front-size40);
-    
   }
 
   h3 {
-    font-family: 'Oranienbaum', sans-serif;
-
     font-size: 1.2vw;
   }
 
   h4 {
-    font-family: 'Oranienbaum', sans-serif;
     font-size: 1vw;
   }
 
   h2,
   h3,
   h4 {
+    font-family: 'Oranienbaum', sans-serif;
     color: var(--main-color-black);
     font-weight: var(--front-w7);
   }
@@ -127,7 +104,7 @@ body {
 
     &__style {
       border: 1px solid var(--main-color-dw);
-      margin: 1vh 0px;
+      margin: 2vh 0px;
     }
   }
 
