@@ -18,6 +18,8 @@
 @import "/src/pages/feedback/style/style.scss";
 //requirements
 @import "/src/pages/requirements/style/style.scss";
+//footer-menu
+@import "/src/pages/footer-menu/style/style.scss";
 //!===============================================================================
 :root {
   --main-rotate-minus: -55deg;
@@ -44,7 +46,7 @@
   --front-size20: 1.2vw;
   --front-size27: 1.4vw;
   --front-size32: 1.8vw;
-  --front-size40: 2vw;
+  --front-size40: 2.2vw;
   --front-size65: 3.6vw;
   --front-sizeMax: 4.6vw;
 }
