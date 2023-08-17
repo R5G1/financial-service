@@ -1,6 +1,6 @@
 # financial-service
 
-#link: https://r5g1-paradigma-website-test.netlify.app/
+#link: https://r5g1-financial-service.netlify.app/
 
 #us: HTML, SCSS, js, webpack, adaptive design
 
