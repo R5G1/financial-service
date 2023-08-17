@@ -1,0 +1,50 @@
+.conteiner {}
+
+.footer {
+
+    &__content-conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media (max-width:768px) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__content {
+        min-width: 35vw;
+        margin: 1vh 1vw;
+
+    }
+
+    &__content-text {}
+
+    &__content-text-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1vh 0vw;
+
+        &::before {
+            content: "";
+            background: url('/src/img/footer/Icon.png') 0 0 no-repeat;
+            height: 20px;
+            min-width: 20px;
+            margin-right: 1vw;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+            
+        }
+    }
+
+    &__bottom-text {margin: 1vh 1vw;}
+}

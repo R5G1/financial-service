@@ -1,0 +1,109 @@
+.work {
+    &__title {
+        padding: 2vh 0vw;
+        margin-top: 5vh;
+    }
+
+
+    &__block-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:992px) {
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+    }
+
+    &__block {
+        max-width: 360px;
+        width: 100vw;
+        min-height: 240px;
+        border: 1px solid var(--main-color-dw);
+        border-radius: 15px;
+        padding: 1.5vh 1.5vw;
+        background: #f3f3f3;
+
+        @media (max-width:992px) {
+            margin: 2vh 2vw;
+        }
+
+        @media (max-width:520px) {
+            min-height: auto;
+        }
+    }
+
+    &__block-number {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: var(--front-size32);
+    }
+
+    .work__block-container {
+        :nth-child(1) {
+            p {
+                color: var(--main-color-mod1);
+            }
+
+        }
+
+        :nth-child(2) {
+            p {
+                color: var(--main-color-gren);
+            }
+
+        }
+
+        :nth-child(3) {
+            p {
+                color: var(--main-color-mod2);
+            }
+
+        }
+    }
+
+    &__block-text {}
+
+    &__block-title {
+        font-size: var(--front-size27);
+        padding: 2vh 0vw;
+    }
+
+    &__block-img1,
+    &__block-img2,
+    &__block-img3 {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__block-img1 {
+
+        background: url('/src/img/work/1.png') 0 0 no-repeat;
+    }
+
+    &__block-img2 {
+        background: url('/src/img/work/2.png') 0 0 no-repeat;
+    }
+
+    &__block-img3 {
+        background: url('/src/img/work/3.png') 0 0 no-repeat;
+    }
+
+    &__block-btn {
+        width: 195px;
+        height: 45px;
+        background: var(--main-color-w);
+        color: var(--main-color-gren);
+        border: 1px solid var(--main-color-dw);
+
+        &:hover {
+            background: var(--main-color-grenM);
+            color: var(--main-color-w);
+        }
+    }
+}
+
+.conteiner {}

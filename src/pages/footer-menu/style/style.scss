@@ -1,0 +1,139 @@
+.footer-menu {
+    &__conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @media (max-width:768px) {
+            justify-content: center;
+        }
+    }
+
+    &__content-conteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1vh 2vw 1vh 2vw;
+
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link-img {
+        background: url('/src/img/menu/logo.png') 0 0 no-repeat;
+        width: 48px;
+        height: 40px;
+    }
+
+    &__link-text {
+        display: block;
+        color: var(--main-color-gren);
+        font-size: var(--front-size27);
+        padding-left: 1vw;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+
+    }
+
+    &__tel,
+    &__mail {
+        display: block;
+        color: var(--main-color-black);
+        margin: 2vh 0;
+
+        &:hover {
+            color: var(--main-color-dv);
+        }
+    }
+
+
+    &__ofice {
+        cursor: pointer;
+        border: 1px solid var(--main-color-gren);
+        border-radius: 15px;
+        padding: 1vh 2vw 1vh 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--main-color-gren);
+        font-size: var(--front-size17);
+        font-weight: bold;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: var(--main-color-w);
+            background: var(--main-color-gren);
+            transition: all 0.3s ease 0s;
+
+            .menu__ofice-img {
+                background: #000;
+                background: url('/src/img/menu/ofice-w.png') 0 0 no-repeat;
+                transition: all 0.3s ease 0s;
+            }
+        }
+    }
+
+    &__ofice-text {
+        padding-right: 0.5vw;
+    }
+
+
+    &__ofice-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('/src/img/menu/ofice.png') 0 0 no-repeat;
+        width: 22px;
+        height: 24px;
+        transition: all 0.3s ease 0s;
+    }
+
+}
+
+.conteiner {}
+
+.footer-menu-navigation {
+
+    &__menu {}
+
+    &__menu-ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media (max-width:768px) {
+            justify-content: start;
+        }
+    }
+
+    &__menu-ul-conteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0vh 2vw;
+
+    }
+
+    &__menu-ul-link {
+        margin: 2vh 0vw;
+    }
+
+    &__menu-ul-text {}
+
+    &__menu-ul-link-challenge {
+        margin: 2vh 0;
+    }
+}

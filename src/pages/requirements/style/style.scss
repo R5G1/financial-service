@@ -1,0 +1,92 @@
+.requirements {
+
+    &__title {
+        padding: 2vh 0vw;
+        margin-top: 5vh;
+    }
+
+    &__block-conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media (max-width:768px) {
+            justify-content: center;
+        }
+    }
+
+    .requirements__block-conteiner {
+        :nth-child(1) {
+            .requirements__block-img {
+                background: url('/src/img/requirements/1.png') 0 0 no-repeat;
+            }
+        }
+
+        :nth-child(2) {
+            .requirements__block-img {
+                background: url('/src/img/requirements/2.png') 0 0 no-repeat;
+            }
+        }
+
+        :nth-child(3) {
+            .requirements__block-img {
+                background: url('/src/img/requirements/3.png') 0 0 no-repeat;
+            }
+        }
+
+        :nth-child(4) {
+            .requirements__block-img {
+                background: url('/src/img/requirements/4.png') 0 0 no-repeat;
+            }
+        }
+    }
+
+    &__block {
+        max-width: 550px;
+        width: 100vw;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 2vh 2vw;
+        margin: 2vh 0.5vw;
+        border: 1px solid var(--main-color-dw);
+        border-radius: 15px;
+        background: var(--main-color-w);
+    }
+
+    &__block-img {
+        min-width: 60px;
+        height: 60px;
+    }
+
+    &__block-text {
+        margin-left: 1vw;
+    }
+
+    &__content-conteiner {
+        border: 1px solid var(--main-color-dw);
+        border-radius: 15px;
+        background: var(--main-color-w);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vh 2vw;
+    }
+
+    &__content-img {
+        background: url('/src/img/requirements/5.png') 0 0 no-repeat;
+        min-width: 60px;
+        height: 60px;
+    }
+
+    &__content-title {
+        margin: 0vh 1vw;
+    }
+
+    &__content-text {}
+
+    &__content-text-link {}
+}
+
+.conteiner {}

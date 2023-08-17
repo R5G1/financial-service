@@ -1,0 +1,123 @@
+.benefits {
+
+    &__title {
+        padding: 2vh 0vw;
+        margin-top: 5vh;
+    }
+
+    &__block-conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--main-color-dw);
+        border-radius: 15px;
+        min-height: 260px;
+        background: var(--main-color-w);
+
+        @media (max-width:768px) {
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .benefits__block-content-line {
+                display: none;
+            }
+        }
+
+    }
+
+    &__block-content {
+        max-width: 260px;
+        width: 100vw;
+        padding: 2vh 2vw;
+
+        @media (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__block-content-line {
+        height: 200px;
+        border: 1px solid var(--main-color-dw);
+    }
+
+    &__block-content-img1,
+    &__block-content-img2,
+    &__block-content-img3,
+    &__block-content-img4 {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__block-content-img1 {
+        background: url('/src/img/benefits/1.png') 0 0 no-repeat;
+    }
+
+    &__block-content-img2 {
+        background: url('/src/img/benefits/2.png') 0 0 no-repeat;
+    }
+
+    &__block-content-img3 {
+        background: url('/src/img/benefits/3.png') 0 0 no-repeat;
+    }
+
+    &__block-content-img4 {
+        background: url('/src/img/benefits/4.png') 0 0 no-repeat;
+    }
+
+    &__block-content-text {
+        font-size: var(--front-size20);
+        margin-top: 4vh;
+    }
+
+    &__calc-conteiner {
+        margin-top: 3vh;
+        margin-bottom: 7vh;
+    }
+
+    &__calc-img {
+        background: url('/src/img/benefits/benefits.png') center/cover no-repeat;
+        height: 340px;
+        width: 100%;
+    }
+
+    &__calc-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__calc-content-title {
+        color: var(--main-color-mod1);
+    }
+
+
+
+    &__calc-content-num-conteiner {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__calc-content-num {
+        background: var(--main-color-w);
+        color: var(--main-color-gren);
+        font-size: var(--front-sizeMax);
+        margin: 5vh 0.5vw;
+        text-align: center;
+        width: 60px;
+        border-radius: 5px;
+    }
+
+    &__calc-content-text {
+        color: var(--main-color-mod1);
+        font-size: var(--front-size17);
+    }
+}
+
+.conteiner {}
