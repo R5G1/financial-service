@@ -74,27 +74,187 @@
                         </div>
 
                     </div>
+
                     <div class="header__content-calc">
-                        <div class="tab">
-                            <button class="tablinks" onclick="openBtn(event, 'fast')" id="defaultOpen">Быстрый</button>
-                            <button class="tablinks" onclick="openBtn(event, 'very-fast')">Быстрый больше</button>
-                        </div>
+                        <div class="tabs">
+                            <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                            <label for="tab-btn-1">Быстрый</label>
+                            <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                            <label for="tab-btn-2">Быстрый больше</label>
 
-                        <div id="fast" class="tabcontent">
-                            <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
-                            <h3>Быстрый</h3>
-                            <p>Быстрый is the capital city of England.</p>
-                        </div>
+                            <div id="tabcontent-1">
+                                <form action="" method="get">
+                                    <div class="tabcontent__conteiner">
+                                        <div class="tabcontent__input-conteiner">
+                                            <div class="tabcontent__input-slider">
 
-                        <div id="very-fast" class="tabcontent">
-                            <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
-                            <h3>Быстрый больше</h3>
-                            <p>Быстрый больше is the capital of France.</p>
+                                                <div class="tabcontent__input-slider-conteiner">
+                                                    <label class="tabcontent__input-slider-label" for="input-slider">
+                                                        <div class="tabcontent__input-slider-label-img-1"></div>
+                                                        <div class="tabcontent__input-slider-label-text-conteiner">
+                                                            <p class="tabcontent__input-slider-label-text">Мне нужно</p>
+                                                            <p
+                                                                class="tabcontent__input-slider-label-text-calc input-cost">
+                                                                18 500 <span>₽</span>
+                                                            </p>
+                                                        </div>
+
+                                                    </label>
+                                                    <input id="tabcontent__input-slider-cost" type="range" min="1000"
+                                                        max="30000" value="18 500" name="input-slider">
+                                                    <div class="tabcontent__input-slider-text-conteiner">
+                                                        <p class="tabcontent__input-slider-text">1000</p>
+                                                        <p class="tabcontent__input-slider-text">30000</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tabcontent__input-slider-conteiner">
+                                                    <label class="tabcontent__input-slider-label" for="input-slider">
+                                                        <div class="tabcontent__input-slider-label-img-2"></div>
+                                                        <div class="tabcontent__input-slider-label-text-conteiner">
+                                                            <p class="tabcontent__input-slider-label-text">На срок</p>
+                                                            <p
+                                                                class="tabcontent__input-slider-label-text-calc input-day">
+                                                                20
+                                                                <span>дней</span>
+                                                            </p>
+                                                        </div>
+                                                    </label>
+                                                    <input id="tabcontent__input-slider-day" type="range" min="5"
+                                                        max="30" value="20" name="input-slider">
+                                                    <div class="tabcontent__input-slider-text-conteiner">
+                                                        <p class="tabcontent__input-slider-text">5</p>
+                                                        <p class="tabcontent__input-slider-text">30</p>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="tabcontent__input-text">
+                                                <div class="tabcontent__input-text-conteiner">
+                                                    <label for="input-text">ФИО</label>
+                                                    <input type="text" name="input-text"
+                                                        placeholder="Иванов Алексей Петрович" required>
+                                                </div>
+                                                <div class="tabcontent__input-text-conteiner">
+                                                    <label for="input-text">Телефон</label>
+                                                    <input type="number" name="input-text"
+                                                        placeholder="+7 (965) 451-85-19" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabcontent__result-conteiner">
+                                            <div class="tabcontent__result-content-conteiner">
+                                                <div class="tabcontent__result-content">
+                                                    <p class="tabcontent__result-content-text">К возврату:</p>
+                                                    <p class="tabcontent__result-content-calc result-calc">22 200
+                                                        <span>₽</span>
+                                                    </p>
+                                                    <p class="tabcontent__result-content-text">Без залога и поручителя
+                                                    </p>
+                                                </div>
+                                                <div class="tabcontent__result-content">
+                                                    <p class="tabcontent__result-content-text">Ставка:</p>
+                                                    <p class="tabcontent__result-content-calc percent-calc">0% <span>в
+                                                            день</span></p>
+                                                    <p class="tabcontent__result-content-text">На первый займ</p>
+                                                </div>
+                                            </div>
+                                            <button class="tabcontent__result-btn">Получить деньги</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="tabcontent-2">
+                                <form action="" method="get">
+                                    <div class="tabcontent__conteiner">
+
+                                        <div class="tabcontent__input-conteiner">
+                                            <div class="tabcontent__input-slider">
+
+                                                <div class="tabcontent__input-slider-conteiner">
+                                                    <label class="tabcontent__input-slider-label" for="input-slider">
+                                                        <div class="tabcontent__input-slider-label-img-1"></div>
+                                                        <div class="tabcontent__input-slider-label-text-conteiner">
+                                                            <p class="tabcontent__input-slider-label-text">Мне нужно</p>
+                                                            <p
+                                                                class="tabcontent__input-slider-label-text-calc input-cost-2">
+                                                                45500 <span>₽</span>
+                                                            </p>
+                                                        </div>
+
+                                                    </label>
+                                                    <input id="tabcontent__input-slider-cost-2" type="range" min="30000"
+                                                        max="60000" value="45500" name="input-slider">
+                                                    <div class="tabcontent__input-slider-text-conteiner">
+                                                        <p class="tabcontent__input-slider-text">30000</p>
+                                                        <p class="tabcontent__input-slider-text">60000</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tabcontent__input-slider-conteiner">
+                                                    <label class="tabcontent__input-slider-label" for="input-slider">
+                                                        <div class="tabcontent__input-slider-label-img-2"></div>
+                                                        <div class="tabcontent__input-slider-label-text-conteiner">
+                                                            <p class="tabcontent__input-slider-label-text">На срок</p>
+                                                            <p
+                                                                class="tabcontent__input-slider-label-text-calc input-day-2">
+                                                                20
+                                                                <span>дней</span>
+                                                            </p>
+                                                        </div>
+                                                    </label>
+                                                    <input id="tabcontent__input-slider-day-2" type="range" min="5"
+                                                        max="30" name="input-slider">
+                                                    <div class="tabcontent__input-slider-text-conteiner">
+                                                        <p class="tabcontent__input-slider-text">5</p>
+                                                        <p class="tabcontent__input-slider-text">30</p>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="tabcontent__input-text">
+                                                <div class="tabcontent__input-text-conteiner">
+                                                    <label for="input-text">ФИО</label>
+                                                    <input type="text" name="input-text"
+                                                        placeholder="Иванов Алексей Петрович" required>
+                                                </div>
+                                                <div class="tabcontent__input-text-conteiner">
+                                                    <label for="input-text">Телефон</label>
+                                                    <input type="number" name="input-text"
+                                                        placeholder="+7 (965) 451-85-19" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tabcontent__result-conteiner">
+                                            <div class="tabcontent__result-content-conteiner">
+                                                <div class="tabcontent__result-content">
+                                                    <p class="tabcontent__result-content-text">К возврату:</p>
+                                                    <p class="tabcontent__result-content-calc result-calc-2">42 200
+                                                        <span>₽</span>
+                                                    </p>
+                                                    <p class="tabcontent__result-content-text">Без залога и поручителя
+                                                    </p>
+                                                </div>
+                                                <div class="tabcontent__result-content">
+                                                    <p class="tabcontent__result-content-text">Ставка:</p>
+                                                    <p class="tabcontent__result-content-calc percent-calc-2">0% <span>в
+                                                            день</span></p>
+                                                    <p class="tabcontent__result-content-text">На первый займ</p>
+                                                </div>
+                                            </div>
+                                            <button class="tabcontent__result-btn">Получить деньги</button>
+                                        </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
+        </div>
         </div>
     </header>
 
@@ -443,9 +603,10 @@
                 <div class="footer__content">
                     <p class="footer__content-text">ООО МКК «Креатив» (Общество с ограниченной ответственностью
                         Микрокредитная компания «Креатив»)
-                       <br> ИНН: 7743369376
-                       <br> КПП: 774301001
-                       <br> ОГРН: 1217700529265</p>
+                        <br> ИНН: 7743369376
+                        <br> КПП: 774301001
+                        <br> ОГРН: 1217700529265
+                    </p>
                     <a class="footer__content-text-link" href="#">Устав</a>
                     <a class="footer__content-text-link" href="#">Сайт ЦБ РФ</a>
                     <a class="footer__content-text-link" href="#">Страница ООО МКК «Креатив» на сайте ЦБ РФ</a>
@@ -454,9 +615,10 @@
                 </div>
                 <div class="footer__content">
                     <p class="footer__content-text">Потребитель вправе обратиться к финансовому уполномоченному:
-                       <br> finombudsman.ru
-                       <br> 119017, Москва, Старомонетный переулок, 3
-                       <br> 8 (800) 200-00-10</p>
+                        <br> finombudsman.ru
+                        <br> 119017, Москва, Старомонетный переулок, 3
+                        <br> 8 (800) 200-00-10
+                    </p>
                     <a class="footer__content-text-link" href="#">Совершения микрофинансовой организацией операций
                         на финансовом рынке</a>
                     <a class="footer__content-text-link" href="#">По управлению рисками микрофинансовых
@@ -479,28 +641,6 @@
 
         </div>
     </footer>
-
-
-    <!-- <script>
-        let defaultOpen = document.getElementById('defaultOpen').click();
-
-        function openBtn(evt, btnName) {
-            let i; let tabcontent; let tablinks;
-
-            tabcontent = document.getElementsByClassName('tabcontent');
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = 'none';
-            }
-
-            tablinks = document.getElementsByClassName('tablinks');
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(' active', '');
-            }
-
-            document.getElementById(btnName).style.display = 'block';
-            evt.currentTarget.className += ' active';
-        }
-    </script> -->
 </body>
 
 </html>

@@ -4,7 +4,15 @@
 
     &__content-title {
         padding: 2vh 0vw;
-        margin-top: 5vh;
+        margin-top: 20vh;
+
+        @media (max-width:1200px) {
+            margin-top: 40vh;
+        }
+
+        @media (max-width:768px) {
+            margin-top: 55vh;
+        }
     }
 
     &__container {

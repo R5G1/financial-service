@@ -2,4 +2,4 @@
 // eslint-disable-next-line linebreak-style
 import './style.scss';
 
-// import './header/index';
+import './pages/header/index';
