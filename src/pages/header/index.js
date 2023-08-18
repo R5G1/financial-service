@@ -43,7 +43,7 @@ function onInputHandlerDay(e) {
 }
 
 function resultOutput(num) {
-  let yearlyPercent = (0.04 * 365) / 100;
+  let yearlyPercent = (0.4 * 365) / 100;
   let sumPercent = ((num * yearlyPercent * dayNumber) / 365) + num;
   result.innerHTML = `${sumPercent.toFixed(0)} <span>₽</span></p>`;
   resultSecond.innerHTML = `${sumPercent.toFixed(0)} <span>₽</span></p>`;
