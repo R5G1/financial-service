@@ -1,0 +1,109 @@
+.popup-mobail {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: var(--main-color-o9);
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+
+    &__body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3vh 3vw;
+        background: var(--main-color-o1);
+    }
+
+    &__content {
+        max-width: 90vw;
+        border-radius: 3vh;
+        margin: 0 auto;
+        min-height: (100-10)vh;
+        background: var(--main-color-d);
+        padding: 3vh 4vw;
+        position: relative;
+        color: var(--main-color-w);
+    }
+
+    &__content-close {
+        position: absolute;
+        top: 2vh;
+        right: 2vh;
+        color: var(--main-color-w);
+        font-size: 2vw;
+    }
+
+
+
+    &__content-title {
+        text-align: center;
+        font-size: 2.2vw;
+        margin: 2vh 0;
+    }
+
+    &__content-text {
+        text-align: center;
+        margin: 2vh 0;
+        font-size: var(--front-size17);
+    }
+
+}
+
+.popup-mobail {
+
+    &__content-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content-form-text {
+        margin: 2vh 0;
+        font-size: var(--front-size14)
+    }
+
+    &__content-form-input {
+        @extend %btn;
+        background: var(--main-color-o);
+        transition: background 0.3s ease 0s;
+        padding-left: 5vw;
+
+        &:hover {
+            background: var(--main-color-dw);
+        }
+
+    }
+
+    &__content-form-btn {
+        margin: 2vh 0;
+        @extend %btn;
+        background: var(--main-color-m);
+        text-align: center;
+    }
+
+    &__content-form-input-checkbox {
+        a {
+            color: var(--main-color-m);
+        }
+    }
+}
+
+
+
+.popup-mobail:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-mobail__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
