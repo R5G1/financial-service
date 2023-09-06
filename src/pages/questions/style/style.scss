@@ -1,6 +1,7 @@
 .questions {
 
-    &__bg,&__bg-m {
+    &__bg,
+    &__bg-m {
         background: url('/src/img/questions/questions.png') center/cover no-repeat;
 
         width: 100%;
@@ -18,6 +19,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+        @media (max-width:768px) {
+            align-items: center;
+        }
     }
 
     &__content-title {}

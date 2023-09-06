@@ -3,6 +3,10 @@
 @import "/src/scss/_font name.scss";
 @import "/src/scss/_adaptiv.scss";
 
+// @import "/src/scss/styleComponents/popup.scss";
+
+// @import "/src/scss/styleComponents/popup-mobail.scss";
+
 //!===============================================================================
 //heder
 @import "/src/pages/header/style/style.scss";
@@ -43,11 +47,11 @@
   --front-w7: 700;
   --front-size11: 0.8vw;
   --front-size14: 0.9vw;
-  --front-size17: 1.0vw;
-  --front-size20: 1.2vw;
-  --front-size27: 1.4vw;
-  --front-size32: 1.8vw;
-  --front-size40: 2.2vw;
+  --front-size17: 14px;
+  --front-size20: 16px;
+  --front-size27: 18px;
+  --front-size32: 22px;
+  --front-size40: 22px;
   --front-size65: 3.6vw;
   --front-sizeMax: 4.6vw;
 }
@@ -74,6 +78,7 @@ body {
   a {
     transition: color 0.3s ease 0s;
     color: var(--main-color-d);
+    cursor: pointer;
 
     &:hover {
       color: var(--main-color-dw);
@@ -82,7 +87,7 @@ body {
 
   p {
     @media (max-width:768px) {
-      font-size: 14px !important;
+      font-size: 14px ;
     }
   }
 
@@ -91,6 +96,10 @@ body {
 
     @media (max-width:768px) {
       font-size: 25px;
+    }
+    @media (min-width:768px) {
+      font-size: var(--front-sizeMax);
+      font-weight: var(--front-w7);
     }
   }
 
@@ -103,10 +112,11 @@ body {
   }
 
   h4 {
-    font-size: 1.2vw;
+    font-size: 18px;
 
     @media (max-width:768px) {
       font-size: 16px !important;
+
     }
 
 
@@ -149,6 +159,9 @@ button {
     background: var(--main-color-grenM);
   }
 }
+
+
+
 }
 
 //!===============================================================================

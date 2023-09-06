@@ -74,17 +74,38 @@
         padding: 2vh 2vw;
     }
 
+    &__content-title-conteiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+    }
+
     &__content-img {
-        background: url('/src/img/requirements/5.png') 0 0 no-repeat;
+        background: url('/src/img/requirements/5.png') center/cover no-repeat;
         min-width: 60px;
         height: 60px;
+
+        @media (max-width:768px) {
+            min-width: 50px;
+            height: 50px;
+        }
     }
 
     &__content-title {
         margin: 0vh 1vw;
+
+        @media (max-width:768px) {
+            margin: 1vh 1vw;
+        }
     }
 
-    &__content-text {}
+    &__content-text {
+
+    }
 
     &__content-text-link {}
 }
