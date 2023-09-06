@@ -121,6 +121,7 @@
     "source-map-support": "^0.5.21",
     "strip-final-newline": "^2.0.0",
     "supports-color": "^7.2.0",
+    "swiper": "^10.2.0",
     "tapable": "^2.2.1",
     "terser": "^5.10.0",
     "terser-webpack-plugin": "^5.2.5",
