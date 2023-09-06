@@ -50,6 +50,8 @@ function resultOutput(cost, days) {
   let sumPercent = (((cost * yearlyPercent * days) / 365) + cost).toFixed(0);
   result.innerHTML = `${sumPercent} <span>₽</span>`;
   resultSecond.innerHTML = `${sumPercent} <span>₽</span>`;
+  percent.innerHTML = '0.4% <span>в день</span></p>';
+  percentSecond.innerHTML = '0.4% <span>в день</span></p>';
 }
 
 onInputHandlerCost({ target: inputCost });
