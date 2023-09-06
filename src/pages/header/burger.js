@@ -1,7 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable prefer-const */
-/* eslint-disable @typescript-eslint/no-use-before-define */
-/* eslint-disable consistent-return */
 
 const btnBurger = document.querySelector('.menu__bureger');
 const btnContent = document.querySelector('.navigation');

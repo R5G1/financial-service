@@ -1,8 +1,6 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable prefer-const */
-/* eslint-disable @typescript-eslint/no-use-before-define */
-/* eslint-disable consistent-return */
+
 import Swiper from 'swiper';
+import 'swiper/css';
 import { Navigation, Pagination } from 'swiper/modules';
 
 Swiper.use([Navigation, Pagination]);
