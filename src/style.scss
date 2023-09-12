@@ -53,6 +53,7 @@
   --front-size32: 22px;
   --front-size40: 22px;
   --front-size65: 3.6vw;
+  --front-sizeh2: 46px;
   --front-sizeMax: 4.6vw;
 }
 
@@ -87,7 +88,7 @@ body {
 
   p {
     @media (max-width:768px) {
-      font-size: 14px ;
+      font-size: 14px;
     }
   }
 
@@ -97,8 +98,14 @@ body {
     @media (max-width:768px) {
       font-size: 25px;
     }
+
     @media (min-width:768px) {
       font-size: var(--front-sizeMax);
+      font-weight: var(--front-w7);
+    }
+
+    @media (min-width:1400px) {
+      font-size: var(--front-sizeh2);
       font-weight: var(--front-w7);
     }
   }
@@ -123,42 +130,43 @@ body {
   }
 
 
-h2,
-h3,
-h4 {
-  font-family: 'Oranienbaum', sans-serif;
-  color: var(--main-color-black);
-  font-weight: var(--front-w7);
-}
-
-.line {
-
-  &__style {
-    border: 1px solid var(--main-color-dw);
-    margin: 2vh 0px;
-  }
-}
-
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--main-color-gren);
-
-  font-size: var(--front-size27);
-  width: 32vw;
-  height: 9vh;
-  border-radius: 1vw;
-  color: var(--main-color-w);
-  transition: background 0.3s ease 0s;
-  @media (max-width:768px) {
-    font-size: 16px;
+  h2,
+  h3,
+  h4 {
+    font-family: 'Oranienbaum', sans-serif;
+    color: var(--main-color-black);
+    font-weight: var(--front-w7);
   }
 
-  &:hover {
-    background: var(--main-color-grenM);
+  .line {
+
+    &__style {
+      border: 1px solid var(--main-color-dw);
+      margin: 2vh 0px;
+    }
   }
-}
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color-gren);
+
+    font-size: var(--front-size27);
+    width: 32vw;
+    height: 9vh;
+    border-radius: 1vw;
+    color: var(--main-color-w);
+    transition: background 0.3s ease 0s;
+
+    @media (max-width:768px) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      background: var(--main-color-grenM);
+    }
+  }
 
 
 
