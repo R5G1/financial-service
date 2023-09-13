@@ -2,7 +2,7 @@
 
     &__title {
         padding: 2vh 0vw;
-        margin-top: 5vh;
+        margin-top: var(--margin-top)
     }
 
     &__block-conteiner {
@@ -68,19 +68,22 @@
     }
 
     &__block-content-text {
-        font-size: var(--front-size20);
         margin-top: 4vh;
     }
 
     &__calc-conteiner {
         margin-top: 3vh;
-        margin-bottom: 7vh;
+        margin-bottom: var(--margin-bottom)
     }
 
     &__calc-img {
         background: url('/src/img/benefits/benefits.png') center/cover no-repeat;
-        height: 340px;
+        min-height: 340px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     &__calc-content {
@@ -105,18 +108,35 @@
     }
 
     &__calc-content-num {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background: var(--main-color-w);
         color: var(--main-color-gren);
-        font-size: var(--front-sizeMax);
         margin: 5vh 0.5vw;
         text-align: center;
-        width: 60px;
+        min-width: 60px;
+        min-height: 60px;
+        height: 100%;
         border-radius: 5px;
+
+        @media (max-width:768px) {
+            font-size: var(--front-size40);
+        }
+
+        @media (min-width:768px) {
+            font-size: var(--front-size40);
+        }
+
+        @media (min-width:1400px) {
+            font-size: var(--front-size65);
+
+        }
     }
 
     &__calc-content-text {
         color: var(--main-color-mod1);
-        font-size: var(--front-size17);
     }
 }
 

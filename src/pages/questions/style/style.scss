@@ -6,7 +6,8 @@
 
         width: 100%;
         min-height: 280px;
-        margin: 8vh 0vw;
+        margin-top: var(--margin-top);
+        margin-bottom: var(--margin-bottom);
     }
 
     &__bg-m {
@@ -20,9 +21,6 @@
         justify-content: center;
         align-items: flex-start;
 
-        @media (max-width:768px) {
-            align-items: center;
-        }
     }
 
     &__content-title {}
@@ -30,9 +28,7 @@
     &__content-text {
         display: block;
         color: var(--main-color-black);
-        font-weight: var(--front-w5);
         padding: 3vh 0vw;
-        font-size: var(--front-size20);
     }
 }
 

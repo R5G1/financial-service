@@ -1,7 +1,7 @@
 .work {
     &__title {
         padding: 2vh 0vw;
-        margin-top: 5vh;
+        margin-top: var(--margin-top);
     }
 
 
@@ -28,6 +28,11 @@
 
         @media (max-width:992px) {
             margin: 2vh 2vw;
+        }
+
+        @media (max-width:768px) {
+            max-width: 100%;
+            margin: 2vh 0;
         }
 
         @media (max-width:520px) {
@@ -68,7 +73,6 @@
     &__block-text {}
 
     &__block-title {
-        font-size: var(--front-size27);
         padding: 2vh 0vw;
     }
 
