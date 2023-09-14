@@ -9,7 +9,9 @@
         flex-wrap: wrap;
         }
         @media (max-width:768px) {
-            justify-content: start;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
         }
     }
 

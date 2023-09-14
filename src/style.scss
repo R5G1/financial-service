@@ -92,15 +92,17 @@ body {
     @media (max-width:768px) {
       font-size: var(--front-size14)
     }
+
     @media (min-width:769px) {
       font-size: var(--front-size17);
     }
   }
 
-  span{
+  span {
     @media (max-width:768px) {
       font-size: var(--front-size14)
     }
+
     @media (min-width:769px) {
       font-size: var(--front-size17);
     }
@@ -133,6 +135,7 @@ body {
 
   h4 {
     font-size: var(--front-size17);
+    line-height: 22px;
   }
 
 
@@ -142,6 +145,7 @@ body {
     font-family: 'Oranienbaum', sans-serif;
     color: var(--main-color-black);
     font-weight: var(--front-w7);
+
   }
 
   .line {
