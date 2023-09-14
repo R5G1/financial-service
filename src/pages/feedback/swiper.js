@@ -8,16 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper', {
 
     breakpoints: {
-      420: {
-        slidesPerView: 1,
+      1200: {
+        slidesPerView: 3,
       },
       992: {
         slidesPerView: 2,
       },
-      1200: {
-        slidesPerView: 3,
+      768: {
+        slidesPerView: 2,
       },
-
+      420: {
+        slidesPerView: 1,
+      },
     },
 
     pagination: {

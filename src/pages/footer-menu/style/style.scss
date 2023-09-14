@@ -20,7 +20,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 1vh 2vw 1vh 2vw;
 
     }
 
@@ -132,9 +131,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin: 0vh 2vw;
+        margin: 0vh 20px;
         @media (max-width:768px) {
             justify-content: start;
+            margin: 0;
         }
     }
 
