@@ -76,7 +76,7 @@
 
 .swiper-slide:nth-child(2n+2) {
     padding: 0 10px;
-    @media (max-width:768px) {
+    @media (max-width:767px) {
        padding: 0;
     }
 }
